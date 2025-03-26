@@ -18,7 +18,7 @@ public class UserService {
     }
 
     //login logic
-    public void login(
+    public String login(
             LoginRequest loginRequest,
             HttpServletResponse httpServletResponse
     ) {
@@ -31,16 +31,7 @@ public class UserService {
             var userDto = optionalUser.get();
 
             if(userDto.getPassword().equals(pw)) {
-                // cookie에 해당 정보를 저장
-                var cookie = new Cookie("authorization-cookie", userDto.getId());
-                cookie.setDomain("localhost");
-                cookie.setPath("/");
-                cookie.setMaxAge(-1);
-                cookie.setHttpOnly(true);
-                cookie.setSecure(true); // https에서만 사용되도록 설정
-
-
-                httpServletResponse.addCookie(cookie);
+               return userDto.getId();
             }
 
 
@@ -48,6 +39,7 @@ public class UserService {
             throw new RuntimeException("User not found");
         }
 
+        return null;
     }
 
 }
