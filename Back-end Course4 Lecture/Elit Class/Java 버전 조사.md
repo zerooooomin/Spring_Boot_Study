@@ -1,4 +1,11 @@
-# LTS란?
+# 버전 조사 이유
+프로젝트를 진행할 때, 모든 행동에 이유를 찾는 것이 좋은 습관이라고 생각한다.
+
+단순히 Java 버전을 고를 때에도 버전마다의 차이가 있다. 다양한 버전 중에 내가 하려고 하는 프로젝트에 맞는 버전을 찾는 것 또한 중요하다.
+
+
+# LTS? Non-LTS?
+### LST
 (*Long Term Support*)
 LTS 버전은 출시 후 수년간 보안 업데이트, 버그 수정 등 장기적인 지원을 제공하는 버전이다.
 안정성이 높음
@@ -16,7 +23,15 @@ LTS 버전 (Long-Term Support)
 2024년 9월까지 지원
 *(현재는 공식 지원 종료)*
 
-Spring Boot 2.0 이후 버전 호환환
+Spring Boot 2.0 이후 버전 호환
+
+
+### 특징
+- 인터페이스에 private 메서드 가능
+- ParallelGC에서 G1 GC로 기본 GC로 설정
+- 람다 지역변수 var 키워드 사용 가능
+- 컬렉션, 스트림 등 메소드 추가
+- 지역 변수의 final 효과 확장
 
 
 ### 장점 : 
@@ -39,6 +54,17 @@ LTS 버전 (Long-Term Support)
 
 Spring boot 3.0 이후 버전 호환
 
+### 특징
+- recode class 키워드 사용 가능 - 불변 데이터 클래스를 간단히 정의.
+- 난수 생성 API 추가
+- 봉인 클래스(Sealed Class) 정식 추가
+- String 여러 줄 사용시 텍스트 블록 기능 사용 가능
+- NumberFormat, DateTimeFormatter 기능 향상
+- Stream.toList() 사용 가능
+- NullPointerException이 어떤 변수에 의해 발생했는지 설명
+- ZGC 도입
+
+
 ### JVM 변경 사항 :
 >JVM이란? (Java Virtual Machin) **OS에 종속받지 않고 CPU가 JAVA를 인식, 실행할 수 있게 하는 가상 컴퓨터** 입니다
 - **ZGC (Z Garbage Collector) 개선:** 낮은 지연 시간을 목표로 하는 가비지 컬렉터인 ZGC가 프로덕션 준비 상태로 발전하여 **대규모 힙 메모리 관리 성능을 향상**시켰습니다.
@@ -46,13 +72,23 @@ Spring boot 3.0 이후 버전 호환
 
 
 
-# 21 Version
+# Java 21
 ---
 23년 9월 출시
 LTS (Long-Term Support)
 2031년 09월까지 지원
 
 Spring boot 3.0 이후 버전 호환
+
+
+### 특징
+- **Virtual Threads** : 수천~수만 개 스레드도 가볍게 생성 가능 → 동시성·성능 대폭 향상.
+- **Pattern Matching for switch** : `switch` 문에서 다양한 타입·패턴 매칭 문법.
+- **Record Patterns** : 레코드와 패턴 매칭을 결합해, 데이터 추출과 바인딩을 간결화.
+- **Sequenced Collections** : 순서를 보장하는 컬렉션 인터페이스 표준화.
+- **String Templates** : 문자열 안에서 변수 삽입·포매팅을 편리하게 지원.
+
+
 
 ### 가상 쓰레드 Virtual Thread
 

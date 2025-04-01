@@ -22,35 +22,21 @@
             }
           },
           {
-            "id": "edf2229b417656f7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Docker에 MySQL띄우기.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Docker에 MySQL띄우기"
-            }
-          },
-          {
             "id": "512cfc1331745b71",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Web Service 인증/Swagger.md",
+                "file": "요청 순서.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Swagger"
+              "title": "요청 순서"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -107,7 +93,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 239.5
   },
   "right": {
     "id": "b6f247cc30fbc658",
@@ -200,16 +186,21 @@
   "active": "512cfc1331745b71",
   "lastOpenFiles": [
     "Elit Class/Java 버전 조사.md",
+    "요청 순서.md",
+    "ENUM을 사용하는 이유.md",
+    "Web Service 인증/JWT Token.md",
+    "Annotation/@EqualsAndHashCode.md",
+    "Multi Module/멀티 모듈 특징.md",
+    "Annotation",
+    "Multi Module/jar vs bootJar.md",
+    "Multi Module",
+    "Image/Pasted image 20250330145234.png",
+    "Image",
+    "Multi Module/Docker에 MySQL띄우기.md",
+    "Annotation/@SuperBuilder.md",
     "Web Service 인증/Swagger.md",
     "Pasted image 20250330135115.png",
-    "Pasted image 20250330145234.png",
     "Elit Class",
-    "멀티 모듈 특징.md",
-    "@SuperBuilder.md",
-    "@EqualsAndHashCode.md",
-    "jar vs bootJar.md",
-    "Docker에 MySQL띄우기.md",
-    "Web Service 인증/JWT Token.md",
     "Web Service 인증/Http Session.md",
     "Web Service 인증/Http Cookie.md",
     "Web Service 인증/Http Header.md",
