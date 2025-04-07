@@ -14,7 +14,7 @@ spring:
 
 token:
   secret:
-    key: SpringBootJWTHelperTokenSecretKeyValue123!@#
+    key: SpringBootJWTHelperTokenSecretKeyValue123!@#testabcdefghelloprintworldmynameisyoungminkimnicetomeetyou
   access-token:
     plus-hour: 1
   refresh-token:
